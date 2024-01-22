@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Js</title>
+</head>
+
+<body>
+    <script>
+        // --------------------------------------string---------------------------------------
+        let name = 'Gaurav';
+        let age = 21;
+        console.log(`My name is ${name} and my age is ${age} .`);
+        let game = new String('Pubg');
+        // console.log(game.__proto__);
+        // console.log(game.toUpperCase() );
+        // console.log(game.charAt('3'));
+        // console.log(game.lastIndexOf('b'));
+
+        // let ngm = game.substring(0, 2);
+        // console.log(ngm);
+
+        // let ngm2 = game.slice(-2);
+        // console.log(ngm2);
+
+        let ngm3 = '    Gaurav Nakum  '
+        // console.log(ngm3);
+        // console.log(ngm3.trim());
+        // console.log(ngm3.replace('Nakum','Mukeshbhai'));
+        // console.log(ngm3.includes('Nakum'));
+        // console.log(ngm3.split());
+
+        // -------------------------------number ------------------------------------------
+        const Score = 973;
+        // console.log(Score.toString().length);
+        // console.log(Score.toFixed(2));
+
+        const OtherNumber = 49.973973
+        // console.log(OtherNumber.toPrecision(4 ));
+
+        const Zero = 1000000000;
+        // console.log(Zero.toLocaleString('en-IN'));
+
+        // ----------------------------------------Math------------------------------------------------
+
+        // console.log(Math);
+        // console.log(Math.abs(-12));
+        // console.log(Math.round(4.6));
+        // console.log(Math.ceil(4.2));
+        // console.log(Math.floor(4.9));
+        // console.log(Math.min(4,3,2,7,9,122));
+        // console.log(Math.max(4,3,2,7,9,122));
+
+        const min = 10;
+        const max = 20;
+        // console.log(Math.floor(Math.random()*(max-min+1)) +min)
+
+        // -------------------------------------------date-1 jan 1970--------------------------------------------------
+
+        let MyDate = new Date();
+        // console.log(typeof MyDate)
+        // console.log(MyDate);
+        // console.log(MyDate.getDate());
+        // console.log(MyDate.getDay());
+
+        // console.log(MyDate.toLocaleString('default',{
+        //     weekday:'long',
+        // }))
+
+        let ndate = new Date(2024, 0, 17);
+        // console.log(ndate);
+        // console.log(ndate.getTime());
+
+        let timeStamp = Date.now();
+        // console.log(timeStamp);
+        // console.log(Math.floor(timeStamp/1000));
+
+        // -----------------------------------------------------------------------array------------------------------------------------
+
+        const myArr = [0, 1, 2, 3, 4, 5]
+        const myHeors = ["shaktiman", "naagraj"]
+
+        const myArr2 = new Array(1, 2, 3, 4)
+        // console.log(myArr[1]);
+
+        // ++++++++++++++++++++++++++++++++++++++++Array methods+++++++++++++++++++++++++++++++++++++++++++++
+
+        // myArr.push(6)    //add new value
+        // myArr.push(7)
+        // myArr.pop()      //remove last value
+
+        // myArr.unshift(9) //add new value in '0 index'
+        // myArr.shift()    //  remove first value
+
+        // console.log(myArr.includes(9)); //value is available in array
+        // console.log(myArr.indexOf(3));  
+
+        // const newArr = myArr.join()     //array to string
+
+        // console.log(myArr);             
+        // console.log( newArr);
+        // console.log(typeof newArr);
+
+        // slice, splice
+
+        console.log("A ", myArr);
+
+        const myn1 = myArr.slice(1, 3)
+
+        console.log(myn1);
+        console.log("B ", myArr);
+
+
+        const myn2 = myArr.splice(1, 3)
+        console.log("C ", myArr);
+        console.log(myn2);
+
+
+        //  -----------------------------------------part-2----------------------------------------
+
+        const marvel_heros = ["thor", "Ironman", "spiderman"]
+        const dc_heros = ["superman", "flash", "batman"]
+
+        // marvel_heros.push(dc_heros)
+
+        // console.log(marvel_heros);
+        // console.log(marvel_heros[3][1]);
+
+        // const allHeros = marvel_heros.concat(dc_heros)
+        // console.log(allHeros);
+
+        const all_new_heros = [...marvel_heros, ...dc_heros]
+
+        // console.log(all_new_heros);
+
+        const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+
+        const real_another_array = another_array.flat(Infinity)
+        console.log(real_another_array);
+
+
+
+        console.log(Array.isArray("gaurav"))
+        console.log(Array.from("gaurav"))  //convert array
+
+        console.log(Array.from({ name: "gaurav" })) // interesting
+
+        let score1 = 100
+        let score2 = 200
+        let score3 = 300
+        console.log(Array.of(score1, score2, score3));
+        // -------------------------------------------------------Object---------------------------------------------------
+    </script>
+</body>
+
+</html>
