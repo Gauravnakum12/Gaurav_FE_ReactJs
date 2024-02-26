@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        </h1>
+</body>
+<script>
+    
+
+let currentDate = new Date();
+
+
+let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+
+let currentDay = days[currentDate.getDay()];
+
+let hours = currentDate.getHours();
+let minutes = currentDate.getMinutes();
+let seconds = currentDate.getSeconds();
+
+
+let period = hours >= 12 ? 'PM' : 'AM';
+hours = hours % 12;
+hours = hours ? hours : 12; // 
+
+
+document.write('Today is: ' + currentDay + '.');
+document.write('Current time is: ' + hours + ' ' + period + ' : ' + minutes + ' : ' + seconds);
+</script>
+</html>

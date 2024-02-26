@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lowest value</title>
+</head>
+<body>
+    <h1>Write a JavaScript function to find the lowest value in an array.: [12,34,-56,1]</h1>
+<script>
+     function HighestValue(array) {
+        if (array.length === 0) {
+            return null; // If array is empty, return null
+        }
+
+        let lowest = array[0]; 
+
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] < lowest) {
+                lowest = array[i];
+            }
+        }
+
+        return lowest;
+    }
+
+    //  data
+    let Data = [12, 34, -56, 1];
+
+    // Call the function and output the result
+    let lowestValue = HighestValue(Data);
+    console.log("lowest Value  in the array:", lowestValue);
+</script>
+
+</body>
+</html>

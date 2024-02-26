@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-9</title>
+    <style>
+        .parent {
+            position: relative;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .box1 {
+            background-color: red;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+
+        .box2 {
+            background-color: green;
+            z-index: 2;
+            top: 50px;
+            left: 50px;
+        }
+
+        .box3 {
+            background-color: blue;
+            z-index: 3;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Define z-index ? create examples as look like this examples using z-index.</h1>
+    <h3>ans:-</h3>
+    <p>z-index is a CSS property that controls the stacking order of positioned elements along the z-axis (perpendicular to the screen). In simpler terms, it determines which elements appear in front of or behind other elements on a web page when they overlap. </p>
+    <div class="parent">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+
+</html>
